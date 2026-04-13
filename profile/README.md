@@ -42,11 +42,6 @@ A comprehensive solution that includes:
 | [be-repo](https://github.com/SQueue-Care/backend) | Data Science & Analytics |
 | [ai-repo](https://github.com/SQueue-Care/ai) | AI/ML Models |
 
-## Contact
-
-- **Organization**: [SQueue-Care](https://github.com/SQueue-Care)
-- **Issues**: [GitHub Issues](https://github.com/SQueue-Care/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/SQueue-Care/discussions)
 
 ## Acknowledgments
 
