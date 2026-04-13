@@ -42,22 +42,6 @@ A comprehensive solution that includes:
 | [be-repo](https://github.com/SQueue-Care/backend) | Data Science & Analytics |
 | [ai-repo](https://github.com/SQueue-Care/ai) | AI/ML Models |
 
-## Get Involved
-
-We welcome contributions from developers, designers, and healthcare enthusiasts!
-
-### How to Contribute
-
-1. Check our [Contributing Guide] on each repository.
-2. Browse [open issues](https://github.com/SQueue-Care/issues)
-3. Fork a repository and create a pull request
-
-### Development Workflow
-
-- All development happens on the `develop` branch
-- PRs should target `develop`, not `main`
-- Use labels: `fs` (Full Stack), `ds` (Data Science), `ai` (AI/ML)
-
 ## Contact
 
 - **Organization**: [SQueue-Care](https://github.com/SQueue-Care)
