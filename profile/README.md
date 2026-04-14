@@ -6,14 +6,6 @@
 
 **SQueue-Care** is an intelligent hospital queue management system developed for the 2026 Coding Camp powered by DBS Foundation. Our mission is to revolutionize healthcare delivery by reducing wait times, optimizing patient flow, and improving the overall hospital experience through smart technology.
 
-## Our Mission
-
-To create a seamless, efficient, and patient-centric queue management system that leverages modern technology to:
-- Reduce patient wait times
-- Optimize hospital resource allocation
-- Provide real-time transparency to patients
-- Enhance the overall healthcare experience
-
 ## What We Build
 
 ### Smart Healthcare Queue System
