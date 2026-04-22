@@ -8,7 +8,7 @@
 
 ## What We Build
 
-### Smart Healthcare Queue System
+### 1. Smart Healthcare Queue System
 
 A comprehensive solution that includes:
 
@@ -18,13 +18,25 @@ A comprehensive solution that includes:
 - **BPJS Integration** - Seamless healthcare insurance verification
 - **Real-time Notifications** - Keep patients informed every step of the way
 
+### 2. Clinical Decision Support System (CDSS)
+
+**Doctor's Assistant for Enhanced Diagnosis:**
+
+- **Trustworthy AI Recommendations** - Provides doctors with explainable, evidence-based diagnosis suggestions
+- **Symptom Analysis** - Intelligent analysis of patient symptoms with severity and duration tracking
+- **Ranked Diagnosis Suggestions** - Top 5 potential diagnoses with confidence scores (0-100%)
+- **Clinical Evidence** - Supporting evidence and reasoning for each recommendation
+- **Medical History Integration** - Contextual patient history for pattern recognition and comparison
+- **Audit Trail** - Complete logging of all inputs, recommendations, and doctor decisions for accountability
+- **Differential Diagnosis Support** - Assists in clinical decision-making while preserving doctor's medical judgment
+
 ## Tech Stack
 
 - **Frontend**: React.js
 - **Backend**: FastAPI / Python
 - **Database**: PostgreSQL
 - **ML Models**: Python / Scikit-learn
-- **Deployment**: Vercel, Render/Railway, Supabase/Neon
+- **Deployment**: Vercel, Render/Railway, Supabase
 
 ## Our Repositories
 
