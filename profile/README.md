@@ -44,7 +44,7 @@ A comprehensive solution that includes:
 |------------|-------------|
 | [fe-repo](https://github.com/SQueue-Care/frontend) | Full Stack (Frontend + Backend) |
 | [be-repo](https://github.com/SQueue-Care/backend) | Data Science & Analytics |
-| [ai-repo](https://github.com/SQueue-Care/ai) | AI/ML Models |
+| [ai-repo](https://github.com/SQueue-Care/ml) | AI/ML Models |
 
 
 ## Acknowledgments
