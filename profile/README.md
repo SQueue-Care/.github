@@ -16,6 +16,16 @@ Sistem ini terbagi ke dalam beberapa repositori yang saling terintegrasi:
 
 ---
 
+## Tautan Demo & Aplikasi (Live Deployment)
+
+Aplikasi **SQueue-Care** telah di-deploy secara publik dan dapat diakses melalui tautan berikut:
+- **Aplikasi Web (Frontend):** [SQueue-Care Live Preview](https://squeue-care.netlify.app/) (Netlify)
+- **API Layanan Utama (Backend):** [SQueue-Care Backend API](https://api-squeue.peix.my.id)
+- **Dokumentasi API Layanan Prediksi (ML Service):** [SmartQueue ML Swagger API Docs](https://prediksi-waktu-tunggu-epdta4f5bjheajf5.southeastasia-01.azurewebsites.net/docs) (Azure App Services)
+- **Dashboard Analisis Data (Streamlit):** [SQueue-Care Analytics Dashboard](https://squeuecare-analytics.streamlit.app/)
+
+---
+
 ## Deskripsi Singkat Proyek
 
 ### Masalah
@@ -33,9 +43,9 @@ SQueue-Care menghadirkan solusi berupa:
 
 Model Machine Learning dikembangkan dan dipelihara pada repositori [SQueue-Care ML](https://github.com/SQueue-Care/ml/tree/main).
 
-* **Tautan Unduh Model:**
-  Model tereduksi/terlatih (misalnya model prediksi waktu tunggu dan model klasifikasi gejala CDSS) diserialisasikan ke format `.joblib` / `.pkl` dan dapat diunduh di direktori `/models` pada:
-  👉 [SQueue-Care ML Models](https://github.com/SQueue-Care/ml/tree/main/models)
+* **Tautan Unduh Model (Google Drive):**
+  Model-model hasil pelatihan yang sudah diserialisasikan ke format `.joblib` / `.pkl` dapat diunduh langsung melalui folder Google Drive berikut:
+  👉 [SQueue-Care ML Models (Google Drive)](https://drive.google.com/drive/folders/1N48kWDc9rZ1_6FGKqeHNw5USVE4DrLY5?usp=sharing)
 * **Memuat (Load) Model:**
   Pada server ML (Python/FastAPI), model dimuat menggunakan pustaka `joblib` sebagai berikut:
   ```python
@@ -52,74 +62,12 @@ Model Machine Learning dikembangkan dan dipelihara pada repositori [SQueue-Care 
 
 ## Petunjuk Setup Environment
 
-Silakan ikuti langkah-langkah di bawah ini untuk menyiapkan lingkungan kerja masing-masing komponen:
+Untuk mempermudah persiapan lingkungan kerja (environment setup), silakan ikuti petunjuk detail yang terdapat di setiap repositori masing-masing komponen:
 
-### 1. Frontend (FE)
-* Pustaka wajib: Node.js v20 LTS dan `pnpm` (atau `npm`).
-* Buat berkas `.env` dan masukkan API endpoint:
-  ```env
-  VITE_API_URL=http://localhost:3000/api/v1
-  ```
-
-### 2. Backend (BE)
-* Pustaka wajib: Node.js v20 LTS, `pnpm`, dan PostgreSQL (misal Supabase).
-* Salin berkas `.env.example` menjadi `.env` di repositori backend dan lengkapi variabel berikut:
-  ```env
-  DATABASE_URL="postgresql://user:pass@host:6543/db?schema=public"
-  DIRECT_URL="postgresql://user:pass@host:5432/db?schema=public"
-  JWT_ACCESS_SECRET="min-16-karakter-acak"
-  JWT_REFRESH_SECRET="min-16-karakter-acak"
-  ML_SERVICE_URL="http://localhost:8000" # Opsional (jika kosong menggunakan heuristik lokal)
-  ```
-
-### 3. Machine Learning (ML)
-* Pustaka wajib: Python 3.10+ dan `pip`.
-* Buat virtual environment dan install dependensi:
-  ```bash
-  python -m venv venv
-  source venv/bin/activate  # Untuk Windows: venv\Scripts\activate
-  pip install -r requirements.txt
-  ```
-
----
-
-## Cara Menjalankan Aplikasi
-
-Jalankan masing-masing komponen di terminal terpisah sesuai urutan di bawah ini:
-
-### 1. Jalankan Backend (BE)
-Masuk ke folder repositori `backend`, lalu jalankan:
-```bash
-# 1. Install dependensi
-pnpm install
-
-# 2. Sinkronisasi database & seeding data awal (admin, dokter, pasien)
-pnpm prisma:migrate
-pnpm prisma:seed
-
-# 3. Jalankan server lokal
-pnpm dev
-```
-* Server default berjalan di: `http://localhost:3000`
-
-### 2. Jalankan Machine Learning (ML) Service
-Masuk ke folder repositori `ml` (aktifkan virtual environment terlebih dahulu), lalu jalankan:
-```bash
-# Jalankan FastAPI server dengan uvicorn
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-```
-* Server default berjalan di: `http://localhost:8000`
-
-### 3. Jalankan Frontend (FE)
-Masuk ke folder repositori `frontend`, lalu jalankan:
-```bash
-# Install dependensi frontend
-pnpm install
-
-# Jalankan dev server Vite
-pnpm dev
-```
-* Buka peramban (browser) di alamat yang tertera (biasanya `http://localhost:5173`).
+1. **Frontend (FE):** Ikuti panduan setup pada [README.md Frontend](https://github.com/SQueue-Care/frontend/tree/main#readme).
+2. **Backend (BE):** Ikuti panduan setup pada [README.md Backend](https://github.com/SQueue-Care/backend/tree/main#readme).
+3. **Machine Learning (ML):** Ikuti panduan setup pada [README.md ML Service](https://github.com/SQueue-Care/ml/tree/main#readme).
+4. **Data Science (DS):** Ikuti panduan setup pada [README.md Data Science](https://github.com/SQueue-Care/data_science#readme).
 
 ---
 
