@@ -9,9 +9,9 @@
 ## Tautan Repositori Proyek (SQueue-Care Ecosystem)
 
 Sistem ini terbagi ke dalam beberapa repositori yang saling terintegrasi:
-* **Frontend (FE):** [SQueue-Care Frontend (main)](https://github.com/SQueue-Care/frontend/tree/main) — Aplikasi antarmuka pasien (booking & tracking), admin (monitoring), dan dokter (CDSS panel) berbasis React.
-* **Backend (BE):** [SQueue-Care Backend (main)](https://github.com/SQueue-Care/backend/tree/main) — Layanan API backend berbasis Node.js/Express, Prisma ORM, dan PostgreSQL.
-* **Machine Learning (ML):** [SQueue-Care ML (main)](https://github.com/SQueue-Care/ml/tree/main) — Layanan prediksi waktu tunggu antrean dan diagnosis CDSS berbasis Python/FastAPI.
+* **Frontend (FE):** [SQueue-Care Frontend](https://github.com/SQueue-Care/frontend/tree/main) — Aplikasi antarmuka pasien (booking & tracking), admin (monitoring), dan dokter (CDSS panel) berbasis React.
+* **Backend (BE):** [SQueue-Care Backend](https://github.com/SQueue-Care/backend/tree/main) — Layanan API backend berbasis Node.js/Express, Prisma ORM, dan PostgreSQL.
+* **Machine Learning (ML):** [SQueue-Care ML](https://github.com/SQueue-Care/ml/tree/main) — Layanan prediksi waktu tunggu antrean dan diagnosis CDSS berbasis Python/FastAPI.
 * **Data Science (DS):** [SQueue-Care Data Science](https://github.com/SQueue-Care/data_science) — Pembersihan data, analisis durasi pelayanan, EDA, dan visualisasi data kesehatan.
 
 ---
